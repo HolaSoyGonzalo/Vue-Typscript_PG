@@ -1,6 +1,9 @@
 <template>
   <div class="app">
     <header>
+      <div class="title">
+        <h1>Random Jobs</h1>
+      </div>
       <div class="order">
         <button @click="handleClick('title')">Order By Title</button>
         <button @click="handleClick('salary')">Order By Salary</button>
@@ -79,5 +82,13 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
+}
+header .title {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 3em;
 }
 </style>
